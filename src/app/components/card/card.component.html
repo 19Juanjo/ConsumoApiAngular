@@ -1,0 +1,31 @@
+<div class="card">
+
+  <img
+    *ngIf="api.image"
+    [src]="api.image.original"
+    alt="{{api.name}}"
+  >
+
+  <div class="content">
+
+    <h3>{{api.name}}</h3>
+
+    <span class="episode">
+      T{{api.season}} · E{{api.number}}
+    </span>
+
+    <p
+      class="summary"
+      *ngIf="api.summary"
+      [innerHTML]="api.summary">
+    </p>
+
+    <button
+      class="fav-btn"
+      (click)="addFavorite()">
+      ❤️ Favorito
+    </button>
+
+  </div>
+
+</div>

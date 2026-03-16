@@ -1,0 +1,9 @@
+<div class="grid">
+
+  <app-card
+    *ngFor="let epi of apiList"
+    [api]="epi"
+    (favorite)="sendFavorite($event)">
+  </app-card>
+
+</div>
