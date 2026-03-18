@@ -35,6 +35,23 @@
   (favorite)="toggleFavorite($event)">
 </app-card-list>
 
+<h2>Personajes</h2>
+
+<div class="characters-grid">
+  <div
+    class="character-card"
+    *ngFor="let c of characters">
+    <img
+      *ngIf="c.person.image"
+      [src]="c.person.image.medium"
+    >
+    <h3>{{c.character.name}}</h3>
+    <p>
+      Actor: {{c.person.name}}
+    </p>
+  </div>
+</div>
+
 <h2>Episodios</h2>
 
 <app-card-list

@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     CardListComponent,
-    CardComponent
+    CardComponent,
   ],
   imports: [
     BrowserModule,

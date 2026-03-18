@@ -13,4 +13,8 @@ export interface ApiHugo {
     original: string;
   };
 
+  rating:{
+    average:number;
+  };
+
 }

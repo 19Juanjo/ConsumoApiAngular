@@ -14,6 +14,10 @@
       T{{api.season}} · E{{api.number}}
     </span>
 
+    <div class="rating">
+      ⭐ {{api.rating.average || 'N/A'}}
+    </div>
+
     <p
       class="summary"
       *ngIf="api.summary"

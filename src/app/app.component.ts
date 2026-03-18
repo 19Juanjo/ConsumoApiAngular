@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from './services/api-hugo.service';
 import { ApiHugo } from './interface/api-hugo';
+import { Character } from './interface/Character';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { ApiHugo } from './interface/api-hugo';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit{
-
+  characters: Character[] = [];
   apis: ApiHugo[] = [];
   filteredEpisodes: ApiHugo[] = [];
 
@@ -33,25 +34,39 @@ export class AppComponent implements OnInit{
       this.filteredEpisodes = data;
     });
 
+    this.apiService.getCharacter().subscribe(data =>{
+      this.characters = data;
+    });
+
   }
 
   applyFilters(){
 
-    let result = this.apis;
+  // 🔥 SIEMPRE trabajar con copia
+  let result = [...this.apis];
 
-    if(this.selectedSeason !== 0){
-      result = result.filter(ep => ep.season === Number(this.selectedSeason));
-    }
+  // 🔥 asegurar tipo número
+  const season = Number(this.selectedSeason);
 
-    if(this.searchText.trim() !== ''){
-      result = result.filter(ep =>
-        ep.name.toLowerCase().includes(this.searchText.toLowerCase())
-      );
-    }
+  if(season !== 0){
+    result = result.filter(ep => ep.season === season);
+  }
 
-    this.filteredEpisodes = result;
+  if(this.searchText.trim() !== ''){
+
+    const search = this.searchText.toLowerCase();
+
+    result = result.filter(ep =>
+      ep.name.toLowerCase().includes(search) ||
+      (ep.summary && ep.summary.toLowerCase().includes(search))
+    );
 
   }
+
+  // 🔥 FORZAR refresco (esto evita el bug)
+  this.filteredEpisodes = [...result];
+
+}
 
   toggleFavorite(ep: ApiHugo){
 
