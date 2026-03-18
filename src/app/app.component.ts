@@ -42,10 +42,8 @@ export class AppComponent implements OnInit{
 
   applyFilters(){
 
-  // 🔥 SIEMPRE trabajar con copia
   let result = [...this.apis];
 
-  // 🔥 asegurar tipo número
   const season = Number(this.selectedSeason);
 
   if(season !== 0){
@@ -63,7 +61,6 @@ export class AppComponent implements OnInit{
 
   }
 
-  // 🔥 FORZAR refresco (esto evita el bug)
   this.filteredEpisodes = [...result];
 
 }
