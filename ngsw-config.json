@@ -29,17 +29,17 @@
     }
   ],
   "dataGroups": [
-    {
-      "name": "api-series",
-      "urls": [
-        "https://api.tvmaze.com/**"
-      ],
-      "cacheConfig": {
-        "strategy": "freshness",
-        "maxSize": 50,
-        "maxAge": "1d",
-        "timeout": "5s"
-      }
+  {
+    "name": "api-series",
+    "urls": [
+      "https://api.tvmaze.com/**"
+    ],
+    "cacheConfig": {
+      "strategy": "freshness",
+      "maxSize": 50,
+      "maxAge": "1d",
+      "timeout": "5s"
     }
-  ]
+  }
+]
 }
