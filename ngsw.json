@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1774462543095,
+  "timestamp": 1774463875356,
   "index": "/ConsumoApiAngular/index.html",
   "assetGroups": [
     {
@@ -14,7 +14,6 @@
         "/ConsumoApiAngular/favicon.ico",
         "/ConsumoApiAngular/index.html",
         "/ConsumoApiAngular/main-32ZDHAC3.js",
-        "/ConsumoApiAngular/manifest.webmanifest",
         "/ConsumoApiAngular/polyfills-FFHMD2TL.js",
         "/ConsumoApiAngular/styles-5INURTSO.css"
       ],
@@ -42,14 +41,13 @@
   ],
   "dataGroups": [
     {
-      "name": "api-series",
+      "name": "tvmaze-api",
       "patterns": [
-        "https:\\/\\/api\\.tvmaze\\.com\\/.*"
+        "https:\\/\\/api\\.tvmaze\\.com\\/shows\\/.*"
       ],
-      "strategy": "freshness",
-      "maxSize": 50,
+      "strategy": "performance",
+      "maxSize": 100,
       "maxAge": 86400000,
-      "timeoutMs": 5000,
       "cacheQueryOptions": {
         "ignoreVary": true
       },
@@ -68,7 +66,6 @@
     "/ConsumoApiAngular/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
     "/ConsumoApiAngular/index.html": "5326babcf53168b7bfc2264f27f5fd4e9188cd63",
     "/ConsumoApiAngular/main-32ZDHAC3.js": "46c2118b8b1b9394552438ae914528c9f3b0fd0e",
-    "/ConsumoApiAngular/manifest.webmanifest": "e984e02dc36b97dd037181d05ab0c2648ca2e7bc",
     "/ConsumoApiAngular/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
     "/ConsumoApiAngular/styles-5INURTSO.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
   },
