@@ -26,16 +26,16 @@
     }
   ],
   "dataGroups": [
-    {
-      "name": "tvmaze-api",
-      "urls": [
-        "https://api.tvmaze.com/**"
-      ],
-      "cacheConfig": {
-        "strategy": "performance",
-        "maxSize": 100,
-        "maxAge": "1d"
-      }
+  {
+    "name": "tvmaze-api",
+    "urls": [
+      "https://api.tvmaze.com/**"
+    ],
+    "cacheConfig": {
+      "strategy": "performance",
+      "maxSize": 100,
+      "maxAge": "1d"
     }
-  ]
+  }
+]
 }
