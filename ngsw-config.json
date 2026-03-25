@@ -29,7 +29,7 @@
   {
     "name": "tvmaze-api",
     "urls": [
-      "https://api.tvmaze.com/**"
+      "https://api.tvmaze.com/shows/**"
     ],
     "cacheConfig": {
       "strategy": "performance",
