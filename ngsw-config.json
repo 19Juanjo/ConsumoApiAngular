@@ -29,7 +29,7 @@
   {
     "name": "characters-cache",
     "urls": [
-      "https://api.tvmaze.com/shows/169/cast"
+      "https://api.tvmaze.com/shows/41/cast"
     ],
     "cacheConfig": {
       "strategy": "performance",
