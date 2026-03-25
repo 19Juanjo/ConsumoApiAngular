@@ -58,3 +58,8 @@
   [apiList]="filteredEpisodes"
   (favorite)="toggleFavorite($event)">
 </app-card-list>
+
+<div *ngIf="isOffline" class="offline-msg">
+  ⚠️ Sin conexión.
+  Los episodios no están disponibles sin internet.
+</div>

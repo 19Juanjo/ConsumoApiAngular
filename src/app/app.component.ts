@@ -22,17 +22,29 @@ export class AppComponent implements OnInit{
 
   constructor(private apiService: ApiService){}
 
+  isOffline = !navigator.onLine;
+
   ngOnInit(){
+
+    window.addEventListener('offline', () => {
+      this.isOffline = true;
+    });
+
+    window.addEventListener('online', () => {
+      this.isOffline = false;
+    });
 
     const stored = localStorage.getItem('favorites');
     if(stored){
       this.favorites = JSON.parse(stored);
     }
 
-    this.apiService.getSerie().subscribe(data=>{
-      this.apis = data;
-      this.filteredEpisodes = data;
-    });
+    if(!this.isOffline){
+      this.apiService.getSerie().subscribe(data=>{
+        this.apis = data;
+        this.filteredEpisodes = data;
+      });
+    }
 
     this.apiService.getCharacter().subscribe(data =>{
       this.characters = data;

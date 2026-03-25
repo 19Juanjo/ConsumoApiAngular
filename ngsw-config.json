@@ -27,13 +27,13 @@
   ],
   "dataGroups": [
   {
-    "name": "tvmaze-api",
+    "name": "characters-cache",
     "urls": [
-      "https://api.tvmaze.com/shows/**"
+      "https://api.tvmaze.com/shows/169/cast"
     ],
     "cacheConfig": {
       "strategy": "performance",
-      "maxSize": 100,
+      "maxSize": 20,
       "maxAge": "1d"
     }
   }
