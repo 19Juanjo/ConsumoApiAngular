@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1774460510149,
+  "timestamp": 1774460834999,
   "index": "/ConsumoApiAngular/index.html",
   "assetGroups": [
     {
@@ -66,9 +66,9 @@
     "/ConsumoApiAngular/assets/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
     "/ConsumoApiAngular/assets/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
     "/ConsumoApiAngular/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "/ConsumoApiAngular/index.html": "ed8aea13b0e3bd3ba245b2cc1adcb80fda32faa1",
+    "/ConsumoApiAngular/index.html": "5326babcf53168b7bfc2264f27f5fd4e9188cd63",
     "/ConsumoApiAngular/main-32ZDHAC3.js": "46c2118b8b1b9394552438ae914528c9f3b0fd0e",
-    "/ConsumoApiAngular/manifest.webmanifest": "113f6d7992e9c007730e8716d94ef333ee948f27",
+    "/ConsumoApiAngular/manifest.webmanifest": "e984e02dc36b97dd037181d05ab0c2648ca2e7bc",
     "/ConsumoApiAngular/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
     "/ConsumoApiAngular/styles-5INURTSO.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
   },
